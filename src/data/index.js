@@ -498,7 +498,7 @@ export const ServicePostTwoData = {
 
 import service1 from "../images/web-development.jpg";
 import digital1 from "../images/digital-1.jpg";
-import service3 from "../images/Capture99.png";
+// import service3 from "../images/Capture99.png";
 
 export const ServicePostThreeData = {
   sectionContent: {
@@ -520,7 +520,7 @@ export const ServicePostThreeData = {
     },
     {
       title: "Graphic Desigining",
-      image: service3,
+      // image: service3,
       url: "/service-details",
     },
   ],

@@ -25,16 +25,16 @@ export const NavLinks = [
     //   },
   
   },
-  {
-    name: "Portfolio",
-    url: "/portfolio-5",
-    // subItems: [
-    //   {
-    //     name: "Portfolio Details",
-    //     url: "/portfolio-details",
-    //   },
-    // ],
-  },
+  // {
+  //   name: "Portfolio",
+  //   url: "/portfolio-details",
+  //   // subItems: [
+  //   //   {
+  //   //     name: "Portfolio Details",
+  //   //     url: "/portfolio-details",
+  //   //   },
+  //   // ],
+  // },
   {
     name: "Blog",
     url: "/blog",
@@ -145,21 +145,7 @@ export const ContactInfosBlock = {
 };
 
 export const ContactInfosList = [
-  {
-    title: "766 granite ave, lathrop, ca 95330",
-    infos: [
-      {
-        name: "Samjot Singh",
-      },
-      {
-        name: "needhelp@codestorm.com",
-      },
-      {
-        name: "+1(408)771-4925",
-      },
-     
-    ],
-  },
+  
   {
     title: "Islamabad, Pakistan",
     infos: [
@@ -172,6 +158,21 @@ export const ContactInfosList = [
       {
         name: "+92336-7605213",
       },
+    ],
+  },
+  {
+    title: "Islamabad, Pakistan",
+    infos: [
+      {
+        name: "Arbaz Ahmad Tariq",
+      },
+      {
+        name: "needhelp@codestorm.com",
+      },
+      {
+        name: "+92300-3672620",
+      },
+     
     ],
   },
  
@@ -496,9 +497,9 @@ export const ServicePostTwoData = {
   ],
 };
 
-import service1 from "../images/web-development.jpg";
-import digital1 from "../images/digital-1.jpg";
-// import service3 from "../images/Capture99.png";
+import service1 from "../images/gp.jpeg";
+import digital1 from "../images/gp2.png";
+import service3 from "../images/gp.png";
 
 export const ServicePostThreeData = {
   sectionContent: {
@@ -520,7 +521,7 @@ export const ServicePostThreeData = {
     },
     {
       title: "Graphic Desigining",
-      // image: service3,
+      image: service3,
       url: "/service-details",
     },
   ],
@@ -585,10 +586,6 @@ export const ClientCarouselData = {
     {
       url: "#",
       image: ClientCarousel04,
-    },
-    {
-      url: "#",
-      image: ClientCarousel05,
     },
   ],
 };

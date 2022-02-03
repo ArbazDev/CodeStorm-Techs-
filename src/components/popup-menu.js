@@ -91,7 +91,7 @@ const PopupMenu = () => {
                 <li>Phone: +1 (408) 771-4925</li>
                 <li>Email: needhelp@codestorm.com</li>
                 <li>
-                  Address: 766 GRANITE AVE, LATHROP, CA 95330
+                  Address: Park road, Islamabad, Pakistan
                 </li>
               </ul>
             </div>

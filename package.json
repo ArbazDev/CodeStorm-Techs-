@@ -23,6 +23,7 @@
     "node-gyp": "^8.2.0",
     "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.28.0",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-countup": "^4.3.3",

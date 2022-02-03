@@ -22,7 +22,7 @@ const Footer = () => {
             <aside className="widget contact_widgets">
               <h3 className="widget_title">contact</h3>
               <p>
-              766 granite ave, lathrop, ca 95330
+              Park Road, Islamabad, Pakistan
               </p>
               
               <p>

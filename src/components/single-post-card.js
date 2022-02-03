@@ -6,13 +6,13 @@ import ReactMarkdown from "react-markdown";
 import { GatsbyImage,getImage } from "gatsby-plugin-image"
 
 const SinglePostCard = (data) => {
-  const image = getImage(data.data.pageContext.data.image.localFile)
-  // console.log(data.data.pageContext.data.image.localFile.childrenImageSharp[0].gatsbyImageData.images.fallback.src)
+  // const image = getImage(data.data.pageContext.data.image.localFile)
+  // console.log(data )
   return (
     <Fragment>
       <div className="single_blog">
         <div className="blog_thumb">
-          <GatsbyImage image = {image}/>
+          <img src={data.data.pageContext.data.image.localFile.childImageSharp.gatsbyImageData.images.fallback.src}/>
         </div>
         <div className="blog_headings">
           <span className="blog_date">20 nov</span>

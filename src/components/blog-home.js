@@ -15,7 +15,7 @@ query {
       image {
         localFile {
           childrenImageSharp {
-            gatsbyImageData(width:200)
+            gatsbyImageData(sizes: "40")
           }
         }
       }
@@ -38,6 +38,9 @@ const BlogHome = () => {
             <SectionTitle data={BlogHomeSection} />
           </Col>
         </Row>
+        <div className="blog_thum">
+          <img src={data.allStrapiArticle.nodes[0].image.localFile.childrenImageSharp[0].gatsbyImageData.images.fallback.src} />
+        </div>
         <Row>
           {data.allStrapiArticle.nodes.map((posts, index) => (
             <Col lg={4} sm={12} md={6} key={index}>

@@ -5,39 +5,39 @@
  */
 
 
-// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-// if (stage === "build-html" || stage === "develop-html") {
-//   actions.setWebpackConfig({
-//     module: {
-//       rules: [
-//         {
-//           test: /bad-module/,
-//           use: loaders.null(),
-//         },
-//       ],
-//     },
-//   })
-// }
-// }
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+if (stage === "build-html" || stage === "develop-html") {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /bad-module/,
+          use: loaders.null(),
+        },
+      ],
+    },
+  })
+}
+}
 
-// exports.onCreateWebpackConfig = ({ stage, actions, plugins, loaders }) => {
-//   if (
-//     stage === "build-html" ||
-//     stage === "develop-html" ||
-//     stage === "develop"
-//   ) {
-//     actions.setWebpackConfig({
-//       module: {
-//         rules: [
-//           {
-//             test: /xterm|xterm-addon-fit/,
-//             use: loaders.null(),
-//           },
-//         ],
-//       },
-//     });
-//   }
-// };
+exports.onCreateWebpackConfig = ({ stage, actions, plugins, loaders }) => {
+  if (
+    stage === "build-html" ||
+    stage === "develop-html" ||
+    stage === "develop"
+  ) {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /xterm|xterm-addon-fit/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
+  }
+};
 const path = require("path");
 const { node } = require("prop-types");
 exports.onCreateWebpackConfig = ({ actions }) => {
@@ -64,11 +64,7 @@ exports.createPages = async function ({ actions, graphql }) {
         image {
           localFile {
             childImageSharp {
-              gatsbyImageData(
-                width: 200
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-              )
+              gatsbyImageData(quality: 10, pngOptions: {compressionSpeed: 10})  
             }
           }
         }
@@ -129,10 +125,10 @@ exports.createPages = async function ({ actions, graphql }) {
       },
     });
   });
-
+}
   // exports.createPages = async function ({ actions, graphql }) {
   // const { data1 } = await graphql(`
-  // query {
+  // {
   //   allStrapiPortfolio {
   //     nodes {
   //       Slug
@@ -154,7 +150,8 @@ exports.createPages = async function ({ actions, graphql }) {
   //   }
   // }  
   // `)
-  // data.allStrapiPortfolio.nodes.forEach(node => {
+
+  // data1.allStrapiPortfolio.nodes.forEach(node => {
   //   // console.log("init");
   //   console.log(node);
   //   const sluggish = node.Slug
@@ -167,17 +164,5 @@ exports.createPages = async function ({ actions, graphql }) {
   //     },
   //   });
   // });
-  data.allStrapiPortfolio.nodes.forEach(node => {
-    // console.log("init");
-    console.log(node);
-    const sluggish = node.Slug
-    actions.createPage({
-      path: '/portfolio/' + sluggish,
-      component: path.resolve('./src/pages/portfolio-details.js'),
-      context: {
-        slug: sluggish,
-        data: node
-      },
-    });
-  });
-};
+// }
+

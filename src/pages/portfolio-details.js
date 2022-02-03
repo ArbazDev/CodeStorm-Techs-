@@ -11,11 +11,12 @@ import MenuContextProvider from "@/context/menu-context";
 import SearchContextProvider from "@/context/search-context";
 import HeaderOne from "@/components/header-one";
 // import { Suspense } from "@loadable/component";
-// import loading from "@/components/loading.js";
+// import loading from "@/components/loading.js";dable/component";
+// import loading from "@/components/loading.js";  console.log(data)
 
 // import ModalPortfolio from "@/components/portfoliomodal";
-// import { graphql , useStaticQuery } from "gatsby";
-// import PortfolioOne from "src/components/portfolio-one";
+import { graphql , useStaticQuery } from "gatsby";
+
 
 
 const PortfolioDetailsPage = (data) => {

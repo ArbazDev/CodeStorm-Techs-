@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BlogSidebar from "@/components/blog-sidebar";
-import loadable from "@loadable/component";
-const SinglePostCard = loadable(()=>import( "@/components/single-post-card"));
+import "@/components/single-post-card";
 
 const BlogDetails = (data) => {
   // console.log(data)

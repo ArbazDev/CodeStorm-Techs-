@@ -1,0 +1,19 @@
+{
+  "name": "codestorm",
+  "version": "1.0.0",
+  "description": "Software website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArbazDev/CodeStorm-Techs-.git"
+  },
+  "author": "ArbazDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArbazDev/CodeStorm-Techs-/issues"
+  },
+  "homepage": "https://github.com/ArbazDev/CodeStorm-Techs-#readme"
+}

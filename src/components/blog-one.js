@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Paginations from "@/components/paginations";
 import { BlogData } from "@/data";
-import "@/components/blog-card";
+import BlogCard from "@/components/blog-card";
 import { graphql, useStaticQuery } from "gatsby";
 
 

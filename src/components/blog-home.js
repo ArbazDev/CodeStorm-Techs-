@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import SectionTitle from "@/components/section-title";
-import "@/components/blog-card";
+import BlogCard from "@/components/blog-card";
 import { BlogHomeSection } from "@/data";
 import { graphql,useStaticQuery } from "gatsby";
 

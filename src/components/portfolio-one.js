@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { PortfolioData } from "@/data";
-const PortfolioCard = import( "@/components/portfolio-card");
+import {PortfolioCard} from "@/components/portfolio-card";
 import { useStaticQuery, graphql } from "gatsby";
 import { query } from "./team-carousel";
 import SwiperCore, { Pagination } from "swiper";

@@ -2,9 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Paginations from "@/components/paginations";
 import { BlogData } from "@/data";
-const BlogCard = loadable(() => import("@/components/blog-card"));
+import "@/components/blog-card";
 import { graphql, useStaticQuery } from "gatsby";
-import loadable from "@loadable/component";
 
 
 

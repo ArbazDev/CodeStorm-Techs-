@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/ArbazDev/CodeStorm-Techs-.git"
   },
+  "scripts": {
+    "build": "webpack"
+  },
   "author": "ArbazDev",
   "license": "ISC",
   "bugs": {

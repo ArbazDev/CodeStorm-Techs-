@@ -3,9 +3,7 @@ import Footer from "@/components/footer";
 import Layout from "@/components/layout";
 import PageBanner from "@/components/page-banner";
 import { Route } from "react-router-dom"
-import loadable from '@loadable/component'
-// import ProtfolioDetails from "@/components/protfolio-details";
-const ProtfolioDetails = loadable(() => import('../components/protfolio-details'))
+import ProtfolioDetails from "@/components/protfolio-details";
 import RelatedPortfolio from "@/components/related-portfolio";
 import MenuContextProvider from "@/context/menu-context";
 import SearchContextProvider from "@/context/search-context";

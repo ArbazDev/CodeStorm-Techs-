@@ -6,9 +6,7 @@ import PageBanner from "@/components/page-banner";
 import MenuContextProvider from "@/context/menu-context";
 import SearchContextProvider from "@/context/search-context";
 import HeaderOne from "@/components/header-one";
-import loadable from "@loadable/component";
-const BlogDetails =  loadable(()=>import( "@/components/blog-details"));
-
+const BlogDetails =  import( "@/components/blog-details");
 
 const BlogSinglePage = (data) => {
   // console.log(data)
